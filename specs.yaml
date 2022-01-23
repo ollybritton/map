@@ -163,7 +163,7 @@
               link: graphs
               subtopics:
                 - type: $subtopic
-                  name: Combine transformations
+                  name: Combined transformations
                   description: Understand how combining transformations works 
                 - type: $subtopic
                   name: Modulus as a transformation
@@ -211,7 +211,7 @@
                   name: Proof by induction for matricies
                   description: Prove a statement about how matrix multiplication generalises using induction
                   examples:
-                    - Show $\begin{pmatrix} 3 & -4 \\ 1 & -1 \end{pmatrix}^n = \begin{pmatrix} 2n+1 & -4n \\ n & 1-2n \end{matrix} \right)$
+                    - Show $\begin{pmatrix} 3 & -4 \\ 1 & -1 \end{pmatrix}^n = \begin{pmatrix} 2n+1 & -4n \\ n & 1-2n \end{pmatrix}$
         - type: $topic
           name: Complex numbers
           subtopics:
@@ -232,7 +232,7 @@
                       description: Convert between the Cartesian form and modulus-argument form of a complex number
                     - type: $subtopic
                       name: Manipulate complex numbers in modulus-argument form
-                      description: desc
+                      description: Add, subtract, multiply and divide complex numbers in modulus-argument form.
             - type: $subtopic
               name: Complex conjugates
               description: Understand and use the complex conjugate

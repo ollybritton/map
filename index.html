@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Map of A-Levels</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <script src="libraries/js-yaml.min.js"></script>
-    <script src="libraries/force-graph.min.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Map of A-Levels</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500&display=swap" rel="stylesheet">
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="libraries/js-yaml.min.js"></script>
+  <script src="libraries/force-graph.js"></script>
+  <script src="libraries/3d-force-graph.js"></script>
 </head>
-  <body>
-    <div id="graph"></div>
-	<script src="index.js"></script>
-  </body>
+
+<body>
+  <div id="graph"></div>
+  <div id="info">
+    <h1>Map of A-levels</h1>
+    <p>
+      Above is a graph of topics assessed in the
+      <a href="javascript:void(0);" data-link-to="mathematics">Mathematics</a>,
+      <a href="javascript:void(0);" data-link-to="further-mathematics">Further Mathematics</a>,
+      <a href="javascript:void(0);" data-link-to="computer-science">Computer Science</a> and
+      <a href="javascript:void(0);" data-link-to="physics">Physics</a>
+      A-levels. Click, drag and zoom to explore the links and find relevant information about each.
+    </p>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
