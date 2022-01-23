@@ -118,8 +118,16 @@ h1 {
   flex-direction: row;
 }
 
+.child-link, .relates-link {
+  font-size: 0.75em;
+}
+
 .cross-topic, .children {
   width: 100%;
+}
+
+.cross-topic i, .children i {
+  font-size: 0.75em;
 }
 
 .node-info-heading {

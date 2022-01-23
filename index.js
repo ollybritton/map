@@ -279,3 +279,14 @@ function interceptClickEvent(e) {
 }
 
 document.addEventListener("click", interceptClickEvent)
+
+function switchTo3D() {
+    const elem = document.getElementById('graph');
+    
+    Graph = ForceGraph3D()(elem)
+      .graphData(data)
+      .nodeLabel('name')
+      .nodeAutoColorBy('type')
+      .nodeVal(calculateImportance)
+      .onNodeClick(handleNodeClick);
+}
