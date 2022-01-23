@@ -1,0 +1,316 @@
+- type: $subject
+  name: Mathematics
+  exam-board: Pearson Edexcel
+  modules:
+    - type: $module
+      name: Pure Mathematics
+      topics:
+        - type: $topic
+          name: Proof
+          id: proof-pure
+          subtopics:
+            - type: $subtopic
+              name: Proof by deduction
+              description: Prove a statement is true by reasoning about the consequences of known truths
+            - type: $subtopic
+              name: Proof by exhaustion
+              description: Prove a statement is true by trying enumerating all possible cases and showing its true
+            - type: $subtopic
+              name: Disproof by counterexample
+              description: Prove a statement is false by showing it doesn't hold for one case
+            - type: $subtopic
+              name: Proof by contradiction
+              description: Prove a statement by showing that, if it was false, it would lead to a mathematical inconsistency
+              link: disproof-by-counterexample
+        - type: $topic
+          name: Algebra and functions
+          subtopics:
+            - type: $subtopic
+              name: Laws of indicies
+              description: Understand and use all the laws of indicies
+            - type: $subtopic
+              name: Surds
+              description: Use and manipulate surds
+              subtopics:
+                - type: $subtopic
+                  name: Rationalising a denominator
+                  description: Turn a fraction with surds on the bottom to a fraction with surds on top
+            - type: $subtopic
+              name: Quadratics
+              description: Work with quadratic functions and their graphs
+              subtopics:
+                - type: $subtopic
+                  name: Discriminants
+                  description: Use and know the discriminant formula $b^2 - 4ac$ and understand what each case means
+                - type: $subtopic
+                  name: Completing the square
+                  description: Know how to complete the square for a quadratic function
+                - type: $subtopic
+                  name: Solving quadratic equations
+                  description: Be able to solve quadratic equations using a calculator, formula or completing the square
+                  link: completing-the-square
+                  subtopics:
+                    - type: $subtopic
+                      name: The quadratic formula
+                      description: Use the quadratic formula $\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ to solve quadratic equations
+                - type: $subtopic
+                  name: Sneaky quadratic equations
+                  description: Know how to solve quadratic equations where the unknown is a function
+                  link: solving-quadratic-equations
+            - type: $subtopic
+              name: Simultaneous equations
+              description: Solve simulataneous equations of two variables using elimination and substitution, where the equations may be linear or quadratic
+              subtopics:
+                - type: $subtopic
+                  name: Elimination
+                  description: Solve simultaneous equations by adding together multiples of the equations to eliminate one variable
+                - type: $subtopic
+                  name: Substitution
+                  description: Solve simultaneous equations by substituting one into another
+            - type: $subtopic
+              name: Inequalities
+              description: Solve and graphically interpret linear and quadratic inequalities 
+              subtopics:
+                - type: $subtopic
+                  name: Inequalities with a fraction
+                  description: Turn inequalities like $\frac{a}{x} < b$ into $ax < bx^2$
+                - type: $subtopic
+                  name: Quadratic inequalities
+                  description: Solve quadratic inequalities by solving and interpret them as the position of the curve on a graph
+                  link: solving-quadratic-equations
+                - type: $subtopic
+                  name: Set notation
+                  description: Represent solutions to inequalities using set notation
+                - type: $subtopic
+                  name: Sketching inequalities
+                  description: Sketch quadratic and linear inequalities with dotted and shaded lines, including combinations 
+            - type: $subtopic
+              name: Algebraic manipulation
+              description: Manipulate algebraic expressions using techniques like factorising, the factor theorem and collecting like terms
+              subtopics:
+                - type: $subtopic
+                  name: Expanding brackets
+                  description: Expand a product of two algebraic expressions into a bigger expression
+                - type: $subtopic
+                  name: Collecting like terms
+                  description: Use collecting like terms as a technique for algebraic manipulation
+                - type: $subtopic
+                  name: Factorisation
+                  description: Convert a polynomial into the product of its factors
+                  subtopics:
+                  - type: $subtopic
+                    name: Factorising cubics
+                    description: Factorise cubics by first finding a factor and then dividing by it so it becomes a quadratic
+                - type: $subtopic
+                  name: The factor theorem
+                  description: Know that if $f\left(\frac{b}{a}\right) = 0$, then $(ax-b)$ is a factor of $f(x)$ and use this to simplify expressions
+                  link: factorisation
+                - type: $subtopic
+                  name: The remainder theorem
+                  description: Know that if $f\left(\frac{b}{a}\right) = c$, then $(ax-b)$ divides into $f(x)$ with remainder $c$
+                  link: the-factor-theorem
+                - type: $subtopic
+                  name: Algebraic long division
+                  description: Divide two algebraic expressions together using algebraic long division
+                  links: [the-remainder-theorem, the-factor-theorem, factorisation, factorising-cubics]
+                - type: $subtopic
+                  name: Simplifying rational expressions
+                  description: Simplify fractions of polynomials where the denominators are at most quadratics
+                  link: algebraic-long-division
+            - type: $subtopic
+              name: Graphs
+              description: Sketch, use and understand the graphs of functions
+              subtopics:
+                - type: $subtopic
+                  name: Sketching polynomials
+                  description: Sketch polynoials up to quartics
+                  links: [solving-quadratic-equations, factorising-cubics]
+                - type: $subtopic
+                  name: Modulus of a linear function
+                  description: Understand the modulus of a linear function so you can sketch it and solve inequalities involving it
+                  link: inequalities
+                - type: $subtopic
+                  name: Asymptotes
+                  description: Identify, sketch and understand asymptotes that are parallel to the axes
+                - type: $subtopic
+                  name: Interpretting solutions of equations graphically
+                  description: Understand roots are where curves intersect axes and be able to find points of intersection between two curves
+                  link: [solving-quadratic-equations]
+                - type: $subtopic
+                  name: Proportional relationships
+                  description: Understand and use proportional relationships and their graphs
+            - type: $subtopic
+              name: Composite and inverse functions
+              description: Understand, use and graph composite and inverse functions
+              subtopics:
+                - type: $subtopic
+                  name: Composite functions
+                  description: Know how to interpret functions like $fg(x)$
+                - type: $subtopic
+                  name: Domain and range
+                  description: Understand the concept of the domain and the range of a function
+                - type: $subtopic
+                  name: Functions as a mapping
+                  description: Interpret functions as the concept of a one-to-one or many-to-one mapping of the domain to the range
+                  link: domain-and-range
+                - type: $subtopic
+                  name: Inverse functions
+                  description: Understand the notation $f^{-1}(x)$ and see them as a reflection of the function $f(x)$ in the line $y = x$.
+                  link: graphs
+            - type: $subtopic
+              name: Transformations
+              description: Understand the effects of transformations of functions on their associated graphs 
+              link: graphs
+              subtopics:
+                - type: $subtopic
+                  name: Combine transformations
+                  description: Understand how combining transformations works 
+                - type: $subtopic
+                  name: Modulus as a transformation
+                  description: Find graphs of $y = |f(x)|$ and $y = f(|x|)$ given graphs of $y = f(x)$.
+                  link: modulus-of-a-linear-function
+            - type: $subtopic
+              name: Partial fractions
+              description: Decompose rational functions into partial fractions with at most three terms and only squared linear terms
+              links: [simplifying-rational-expressions, algebraic-manipulation]
+            - type: $subtopic
+              name: Modelling
+              description: Use functions as a model and consider the limits and refinements of these models
+              
+
+                
+                
+
+- type: $subject
+  name: Further Mathematics
+  exam-board: Pearson Edexcel
+  modules:
+    - type: $module
+      name: Core Pure Mathematics
+      topics:
+        - type: $topic
+          name: Proof
+          id: proof-further
+          link: proof-pure
+          subtopics:
+            - type: $subtopic
+              name: Proof by induction
+              description: Prove a statement true by showing it's true for a base case and that if it's true for one case, it's true for the next case
+              subtopics:
+                - type: $subtopic
+                  name: Proof by induction for sums of series
+                  description: Prove a statement is true using induction for the sum of a series
+                  examples:
+                    - Show $\sum^n_{r = 1} r^3 = \frac{1}{4}n^2(n+1)^2$
+                - type: $subtopic
+                  name: Proof by induction for divisibility
+                  description: Prove a statement about the divisibility of a number is true using induction
+                  examples:
+                    - Show $3^{2n} + 11$ is divisible by 4
+                - type: $subtopic
+                  name: Proof by induction for matricies
+                  description: Prove a statement about how matrix multiplication generalises using induction
+                  examples:
+                    - Show $\begin{pmatrix} 3 & -4 \\ 1 & -1 \end{pmatrix}^n = \begin{pmatrix} 2n+1 & -4n \\ n & 1-2n \end{matrix} \right)$
+        - type: $topic
+          name: Complex numbers
+          subtopics:
+            - type: $subtopic
+              name: Solving polynomials with complex roots
+              description: Solve polynomials up to degree four with real coefficients
+              link: solving-quadratic-equations
+            - type: $subtopic
+              name: Manipulate complex numbers
+              description: Know how to add, subract, multiply and divide complex numbers $x + iy$ and know what "real part" and "imaginary part" means.
+              subtopics:
+                - type: $subtopic
+                  name: Modulus and argument
+                  description: Understand the terms "modulus" and "argument"
+                  subtopics:
+                    - type: $subtopic
+                      name: Cartesian form to modulus-argument form
+                      description: Convert between the Cartesian form and modulus-argument form of a complex number
+                    - type: $subtopic
+                      name: Manipulate complex numbers in modulus-argument form
+                      description: desc
+            - type: $subtopic
+              name: Complex conjugates
+              description: Understand and use the complex conjugate
+              subtopics:
+                - type: $subtopic
+                  name: Roots in conjugate pairs
+                  description: Know that the non-real roots of polynomial equations with real coefficients occur in conjugate pairs
+                  link: solving-polynomials-with-complex-roots
+            - type: $subtopic
+              name: Argand diagrams
+              description: Understand and interpret argand diagrams
+              subtopics:
+                - type: $subtopic
+                  name: Sums and differences of complex numbers on the Argand diagram
+                  description: Represent and interpret the sums or differences of two complex numbers on an Argand diagram
+                  link: manipulate-complex-numbers
+                - type: $subtopic
+                  name: Loci in the Argand diagram
+                  description: Construct and interpret simple loci in the argand diagram
+                  subtopics:
+                    - type: $subtopic
+                      name: Circles in the Argand diagram
+                      description: Construct and interpret circles in the Argand diagram as loci, $|z - a| = r$
+                    - type: $subtopic
+                      name: Half-lines in the Argand diagram
+                      description: Construct and interpret half-lines in the Argand diagram, $arg(z - a) = \theta$
+                      subtopics:
+                    - type: $subtopic
+                      name: Perpendicular bisectors in the Argand diagram
+                      description: Create and understand perpendicular bisectors in an Argand diagram as $|z - a| = |z - b|$
+                    - type: $subtopic
+                      name: Regions in the Argand diagram
+                      description: Interpret regions in an Argand diagram as an inequality
+                      link: inequalities
+            - type: $subtopic
+              name: De Moivre's Theorem
+              description: Understand de Moivre's theorem $z^n = r^n(\cos n\theta + i\sin n\theta)$ and use it to find multiple angle formulae and sums of series
+              link: eulers-relation-for-complex-numbers
+              subtopics:
+                - type: $subtopic
+                  name: Cosine using de Moivre's Theorem
+                  description: Know how to use the result $z + \frac{1}{z} = 2\cos\theta$
+                  link: sine-using-de-moivres-theorem
+                - type: $subtopic
+                  name: Sine using de Moivre's Theorem
+                  description: Know how to use the result $z - \frac{1}{z} = 2i \sin\theta$
+                - type: $subtopic
+                  name: Angle formulae using de Moivre's Theorem
+                  description: Create angle formulae using de Moivre's Theorem for multiples to powers and powers to multiples of sine, cosine and tangent.
+                  subtopics:
+                    - type: $subtopic
+                      name: Powers to multiples using de Moivre's Theorem
+                      description: Convert powers of trigonometric functions to angle-multiples, like $\sin^5 \theta \equiv \frac{1}{16}\sin5\theta - \frac{5}{16}\sin3\theta + \frac{5}{8}\sin\theta$ 
+                      links: [sine-using-de-moivres-theorem, cosine-using-de-moivres-theorem, multiples-to-powers-using-de-moivres-theorem]
+                    - type: $subtopic
+                      name: Multiples to powers using de Moivre's Theorem
+                      description: Convert angle-multiples of trigonometric functions to powers, like $\cos 3\theta \equiv 4\cos^3 \theta - 3\cos \theta$ 
+                      links: [sine-using-de-moivres-theorem, cosine-using-de-moivres-theorem]
+            - type: $subtopic
+              name: Euler's relation for complex numbers
+              description: Know that $e^{i\theta} = \cos\theta + i\sin\theta$
+              subtopics:
+                - type: $subtopic
+                  name: Modulus-argument form using Euler's relation
+                  link: modulus-and-argument
+                  description: Know that modulus-argument form can be represented using $z = re^{i\theta}$
+                - type: $subtopic
+                  name: Sine and cosine as complex exponentials
+                  description: Know that $\cos\theta = \frac{1}{2}(e^{i\theta} + e^{-i\theta})$ and $\sin\theta = \frac{1}{2}(e^{i\theta} - e^{-i\theta})$
+            - type: $subtopic
+              name: Roots of complex numbers
+              description: Find the $n$ distinct $n$th roots of $re^{i\theta}$
+              subtopics:
+                - type: $subtopic
+                  name: Geometric interpretation of roots of complex numbers
+                  description: Know that the $n$ distinct $n$th roots of $re^{i\theta}$ form a regular $n$-gon on the Argand diagram
+                - type: $subtopic
+                  name: Complex roots of unity
+                  description: Use the complex roots of unity to solve geometric problems
+                  link: geometric-interpretation-of-roots-of-complex-numbers
+                  
